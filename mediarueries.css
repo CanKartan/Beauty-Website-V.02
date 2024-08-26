@@ -1,0 +1,88 @@
+@media screen and (max-width: 1400px) {
+
+  }
+  
+  @media screen and (max-width: 1200px) {
+    #Nav_section ul{
+        display: none;
+    }
+    #ofcanvas{
+        display: block;
+    }
+    #Home_section{
+        height: 50vh;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+  }
+  
+  @media screen and (max-width: 600px) {
+    #Nav_section ul{
+        display: none;
+    }
+    #ofcanvas{
+        display: block;
+    }
+    #Home_section{
+        height: 40vh;
+        width: 100%;
+        margin: 0 auto;
+    }
+    /* width: 18rem; */
+
+    #Welcome_seciton .card{
+        width: 45vh;
+    }
+    
+    .Lazer {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+    
+    .Lazer img {
+        width: 100%; 
+        max-width: 45vh; 
+        margin: 60px 0 0 2px; 
+        border-radius: 10px; 
+    }
+    
+    .lazer_text {
+        margin-top: 2vh;
+        text-align: center; 
+    }
+    
+    .lazer_text h3 {
+        width: 90%; 
+        margin: 0 auto; 
+        text-align: start; 
+        font-size: 2rem;
+        padding-bottom: 10px;
+    }
+    
+    .Lazer p {
+        width: 90%; 
+        margin: 0 auto; 
+        text-align: start; 
+        overflow: hidden;
+        text-overflow: ellipsis; 
+    }
+    
+    .Lazer_Btn {
+        width: 200px;
+        margin: 20px auto; 
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        border: none;
+        background-color: #AAB396;
+    }
+    
+    .Lazer_Btn:hover {
+        transition: 0.5s all ease-in-out;
+        text-decoration: underline;
+        background-color: #F7EED3;
+    }
+
+  }
