@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+#Nav_section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 12vh;
+}
+#Nav_section ul {
+  display: flex;
+}
+#ofcanvas {
+  display: none;
+}
+#ofcanvas .ofcanvasBTN {
+  cursor: pointer;
+  background-color: #e7f0dc;
+}
+#OffCanvas {
+  display: block !important;
+}
+.offcanvas-title {
+  font-size: 2rem;
+}
+#OffCanvas li {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  list-style: none;
+  padding-bottom: 30px;
+}
+#OffCanvas li a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+.offcanvas-body img {
+  margin-top: 50px;
+  margin-left: 30px;
+  height: 30vh;
+}
+#Nav_section .Nav_section_pc li {
+  padding-left: 10px;
+  list-style: none;
+  font-size: 1.25rem;
+}
+#Nav_section ul li a {
+  text-decoration: none;
+  color: black;
+}
+#Nav_section ul li a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+.Nav_section_phone {
+  display: none;
+}
+.services_nav {
+  margin-left: 40px;
+  margin-bottom: 30px;
+  width: 20%;
+  height: 80vh;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px 0px grey;
+}
+.services_nav ul {
+  margin-top: 7vh;
+}
+.services_nav ul li {
+  cursor: pointer;
+  font-size: 2rem;
+  list-style-type: none;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+.services_nav ul li:hover {
+  color: gray;
+  text-decoration: underline;
+}
+
+/* ITEM DESCRİPTİON */
+/* --------------- */
+.item_show {
+  display: block;
+}
+.item_none {
+  display: none;
+}
+.text_center {
+  text-align: center;
+}
+/* ----------- */
+
+/* Item Container */
+.Lazer_Epilasyon_about,.G5_Masajı_about,.İpek_Kirpik_about,.Tırnak_Bakımı_about  {
+  margin: 0 auto;
+}
+.carousel-inner img {
+  width: 80vh;
+}
+.container {
+  height: 70vh;
+  width: 80%;
+  display: flex;
+}
+.container p {
+  /* background-color: black; */
+  text-align: end;
+  padding-right: 60px;
+}
+
+footer {
+  background-color: #aab396;
+  width: 100%;
+  height: 12vh;
+  margin: 0 auto;
+}
+footer p {
+  text-align: center;
+}
+#endNav {
+  display: flex;
+  justify-content: space-evenly;
+}
+#endNav ul li {
+  list-style-type: none;
+  cursor: pointer;
+}
+#endNav ul li:hover {
+  color: white;
+  transition: 0.2s all ease-in;
+}
+.icons {
+  justify-content: center;
+  font-size: 4vh;
+  display: flex;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+.icons i {
+  padding-right: 20px;
+}
+.icons i:hover {
+  transition: 0.2s all ease-in;
+  color: white;
+  padding-right: 20px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    html {
+        height: 100vh;
+    }
+
+    #Nav_section ul {
+        display: none;
+    }
+
+    #ofcanvas {
+        display: block;
+    }
+
+    footer {
+        background-color: #AAB396;
+        width: 100%;
+        height: 10vh;
+        margin: 0 auto;
+    }
+
+    footer p {
+        font-size: 0.7rem;
+        text-align: center;
+    }
+
+    #endNav {
+        font-size: 0.7rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .icons {
+        justify-content: center;
+        font-size: 2vh;
+        display: flex;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .services_nav {
+        width: 100%;
+        height: 10vh;
+    }
+
+    .services_nav ul {
+        display: flex;
+        margin-top: 0.75vh;
+    }
+
+    .services_nav ul li {
+        cursor: pointer;
+        font-size: 1rem;
+        list-style-type: none;
+        padding-bottom: 20px;
+    }
+
+    .row {
+        flex-direction: column !important;
+    }
+
+    .services_nav {
+        width: 40vh;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 5px 0px grey;
+    }
+
+    .carousel-inner img {
+        width: 30vh;
+    }
+
+    .container {
+        margin-left: 10vh;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .container h2 {
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+    }
+
+    .container p {
+        margin-bottom: 20px;
+        font-size: 1rem;
+    }
+
+    .carousel-inner img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .text_center{
+        margin-left: 15vh;
+    }
+}
