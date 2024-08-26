@@ -17,8 +17,8 @@
         width: 100%;
     }
     #Welcome_seciton .card{
-        width: 40vh;
-        height: 25vh;
+         width: 40vh; 
+        /* height: 20vh; */
         background-color: white;
     }
     #Welcome_seciton .card_1{
