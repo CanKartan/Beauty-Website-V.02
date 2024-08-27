@@ -10,6 +10,10 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+   
+    <link rel="stylesheet" href="./mediarueries.css">
+    
+    <link rel="stylesheet" href="./global.css">
     <link rel="stylesheet" href="./services.css" />
   </head>
   <body>
@@ -64,192 +68,95 @@
     </nav>
 
     <section id="#Services_Section">
-      <div class="row">
-        <div id="servicesNav" class="col-4 services_nav">
+      <div class="services_nav">
+        <div class="container">
           <ul>
-            <li onclick="services_Item(event)">
-              <a href="#"></a>Lazer Epilasyon
-            </li>
+            <li onclick="services_Item(event)"><a href="#"></a>Lazer Epilasyon</li>
             <li onclick="services_Item(event)"><a href="#"></a>G5 Masajı</li>
             <li onclick="services_Item(event)"><a href="#"></a>İpek Kirpik</li>
-            <li onclick="services_Item(event)">
-              <a href="#"></a>Tırnak Bakımı
-            </li>
+            <li onclick="services_Item(event)"><a href="#"></a>Tırnak Bakımı</li>
           </ul>
         </div>
-        <div id="services" class="col-8">
-          <div class="Lazer_Epilasyon_about div-close item_none">
-            <h2 class="text_center">Lazer Epilasyon</h2>
-            <div class="container">
-              <p>
-                yazı Buraya
-              </p>
-              <div
-                id="carouselExampleSlidesOnly"
-                class="carousel slide"
-                data-bs-ride="carousel"
-              >
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img
-                      src="./assets/carousel_images_1.JPG"
-                      class="d-block"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="./assets/carousel_images_1.JPG"
-                      class="d-block"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="./assets/carousel_images_1.JPG"
-                      class="d-block"
-                      alt="..."
-                    />
-                  </div>
-                </div>
-              </div>
+      </div>
+      <div class="services_body">
+        <div class="services_container">
+          <div id="lazer" class="Lazer_Epilasyon_about div-close  card mb-3 ">
+            <h5 class="card-title text_center">Lazer Epilasyon</h5>
+            <img src="./assets/g5-img-1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">   
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis eveniet reprehenderit totam mollitia officia explicabo velit impedit qui quo ducimus! Nemo, voluptate quisquam magnam omnis suscipit libero accusamus sequi vitae nisi amet culpa. Deleniti error, eaque nostrum natus, accusamus quisquam, perferendis libero a ullam iure quos quaerat repellendus nihil quidem.</p>
+              <p class="card-text"><small class="text-body-secondary">+800 Değerlendirme</small></p>
+              <p class="card-text"><small class="text-body-secondary">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </small></p>
             </div>
           </div>
-          <div class="G5_Masajı_about div-close item_none">
-            <h2 class="text_center">G5 Masajı</h2>
-            <div class="container">
-              <p>Yazı Buraya Gelecek</p>
-              <div id="carouselExample" class="carousel slide">
-                <div
-                  id="carouselExampleSlidesOnly"
-                  class="carousel slide"
-                  data-bs-ride="carousel"
-                >
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img
-                        src="./assets/carousel_images_1.JPG"
-                        class="d-block"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="carousel-item">
-                      <img
-                        src="./assets/carousel_images_1.JPG"
-                        class="d-block"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="carousel-item">
-                      <img
-                        src="./assets/carousel_images_1.JPG"
-                        class="d-block"
-                        alt="..."
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div class="G5_Masajı_about div-close item_none card mb-3">
+            <h5 class="card-title text_center">G5 Masajı</h5>
+            <img src="./assets/g5-img-1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">   
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis eveniet reprehenderit totam mollitia officia explicabo velit impedit qui quo ducimus! Nemo, voluptate quisquam magnam omnis suscipit libero accusamus sequi vitae nisi amet culpa. Deleniti error, eaque nostrum natus, accusamus quisquam, perferendis libero a ullam iure quos quaerat repellendus nihil quidem.</p>
+              <p class="card-text"><small class="text-body-secondary">+800 Değerlendirme</small></p>
+              <p class="card-text"><small class="text-body-secondary">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </small></p>
             </div>
           </div>
-          <div class="İpek_Kirpik_about div-close item_none">
-            <h2 class="text_center">İpek Kirpik</h2>
-            <div class="container">
-              <p>Yazı Buraya Gelecek</p>
-              <div id="carouselExample" class="carousel slide">
-                <div
-                  id="carouselExampleSlidesOnly"
-                  class="carousel slide"
-                  data-bs-ride="carousel"
-                >
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img
-                        src="./assets/carousel_images_1.JPG"
-                        class="d-block"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="carousel-item">
-                      <img
-                        src="./assets/carousel_images_1.JPG"
-                        class="d-block"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="carousel-item">
-                      <img
-                        src="./assets/carousel_images_1.JPG"
-                        class="d-block"
-                        alt="..."
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div class="İpek_Kirpik_about div-close item_none card mb-3">
+            <h5 class="card-title text_center">İpek Kirpik</h5>
+            <img src="./assets/g5-img-1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">   
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis eveniet reprehenderit totam mollitia officia explicabo velit impedit qui quo ducimus! Nemo, voluptate quisquam magnam omnis suscipit libero accusamus sequi vitae nisi amet culpa. Deleniti error, eaque nostrum natus, accusamus quisquam, perferendis libero a ullam iure quos quaerat repellendus nihil quidem.</p>
+              <p class="card-text"><small class="text-body-secondary">+800 Değerlendirme</small></p>
+              <p class="card-text"><small class="text-body-secondary">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </small></p>
             </div>
           </div>
-          <div class="Tırnak_Bakımı_about div-close item_none">
-            <h2 class="text_center">Tırnak Bakımı</h2>
-            <div class="container">
-              <p>Yazı Buraya Gelecek</p>
-              <div id="carouselExample" class="carousel slide">
-                <div
-                  id="carouselExampleSlidesOnly"
-                  class="carousel slide"
-                  data-bs-ride="carousel"
-                >
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img
-                        src="./assets/carousel_images_1.JPG"
-                        class="d-block"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="carousel-item">
-                      <img
-                        src="./assets/carousel_images_1.JPG"
-                        class="d-block"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="carousel-item">
-                      <img
-                        src="./assets/carousel_images_1.JPG"
-                        class="d-block"
-                        alt="..."
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div class="Tırnak_Bakımı_about div-close item_none card mb-3">
+            <h5 class="card-title text_center">Tırnak Bakımı</h5>
+            <img src="./assets/g5-img-1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">   
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis eveniet reprehenderit totam mollitia officia explicabo velit impedit qui quo ducimus! Nemo, voluptate quisquam magnam omnis suscipit libero accusamus sequi vitae nisi amet culpa. Deleniti error, eaque nostrum natus, accusamus quisquam, perferendis libero a ullam iure quos quaerat repellendus nihil quidem.</p>
+              <p class="card-text"><small class="text-body-secondary">+800 Değerlendirme</small></p>
+              <p class="card-text"><small class="text-body-secondary">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </small></p>
             </div>
           </div>
         </div>
       </div>
     </section>
-
     <footer>
-      <div class="icons">
-        <i class="fa-brands fa-google"></i>
-        <i class="fa-brands fa-instagram"></i>
+      <div id="endNav">
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> Hoşnudiye, Behiç Erkin Caddesi No:2 D:8 kat 2, 26130 Tepebaşı/Eskişehir</li>
+          <li><i class="fas fa-phone-alt"></i> Telefon: 0501 098 23 26</li>
+        </ul>
       </div>
-      <nav id="endNav">
-        <ul>
-          <li><a href=""></a>Ana Sayfa</li>
-        </ul>
-        <ul>
-          <li><a href=""></a>Hakkımızda</li>
-        </ul>
-        <ul>
-          <li><a href=""></a>Hizmetler</li>
-        </ul>
-        <ul>
-          <li><a href=""></a>İletişim</li>
-        </ul>
-      </nav>
-      <p>&copy; 2024 Can KARTAN. All rights reserved.</p>
+    
+      <div class="icons">
+        <a href="https://www.google.com" target="_blank"><i class="fab fa-google"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    
+      <p>Tüm hakları saklıdır © Can KARTAN</p>
     </footer>
     <script src="./services.js"></script>
     <script

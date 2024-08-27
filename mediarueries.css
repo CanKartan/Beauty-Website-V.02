@@ -9,7 +9,7 @@
         display: block;
     }
     #Home_section{
-       height: 50vh; 
+       height: 40vh; 
         width: 100%;
         margin: 0 auto;
     }
@@ -102,72 +102,60 @@
                 padding-top: 10px;
                 border-radius: 2px;
             }
-            #Coments_section{
-               width: 100%;
+            #Coments_section {
+                margin-left: 2px;
             }
-            .comments{
-                flex-direction: column;
-                /* flex-wrap: wrap-reverse; */
+            
+            .comments {
                 display: flex;
+                flex-direction: column; 
+                flex-wrap: wrap; 
             }
-            .comments_container{
-                margin-left: 5vh;
-                width: 100%;
-                height: 110px;
+            
+            .comments_container {
                 display: flex;
-                margin-bottom: 40px;
+                flex-direction: column; 
+                margin-bottom: 10px;
                 border-bottom: 1px solid black;
+                align-items: center; 
             }
-            .comments_container .circle{
-                 background-color: grey; 
-                 width: 70px;
-                 height: 100px; 
+            
+            .comments_container img {
+                margin-right: 10px;
                 border-radius: 50%;
-                padding-right: 100px
-            } 
-            .comments_container p{
+                width: 10vh; 
+            }
+            
+            .comment-content {
                 text-align: center;
-                padding-top: 5px;
-                width: 400px;            /* Paragraf genişliği */
-                white-space: wrap;     /* Tek satırda göster */
-                overflow: hidden;        /* Taşan metni gizle */
-                text-overflow: ellipsis; /* Üç nokta ile göster */
-              }
-              .comments_container h6{
-                padding-left: 10px;
-                text-align: left;
-               padding-top: 30px;
-              }
-              #Coments_section h1{
-                margin-bottom: 2px;
-                text-align: center;
+                width: 100%; 
+                max-width: 100%;
+                display: flex;
+                flex-direction: column; 
             }
-            #Coments_section i{
-            font-size: 1.5rem;
-            margin-left: 50%;
-            margin-bottom: 10px;
+            
+            .comment-content h6 {
+                font-size: bold;
+                padding-top: 2px;
+                padding-right: 10px;
+                color: black; 
+            }       
+            #endNav {
+                flex-direction: row;
+                justify-content: space-around;
             }
-            footer{
-                background-color: #AAB396;
-                width: 100%;
-                height: 10vh;
-                margin: 0 auto;
+        
+            #endNav ul li {
+                padding: 0 5px;
             }
+        
             footer p {
-                font-size: 0.7rem;
-                text-align: center;
+                font-size: 1vh;
             }
-            #endNav{
-                font-size: 0.7rem;
-                display: flex;
-                justify-content:space-evenly;
-            }
+        
             .icons {
-                justify-content: center;
                 font-size: 2vh;
-                display: flex;
-                padding-bottom: 10px;
-                padding-top: 10px;
             }
+
 }
 
