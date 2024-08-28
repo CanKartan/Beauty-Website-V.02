@@ -1,9 +1,6 @@
 
     document.addEventListener('DOMContentLoaded', function() {
-    
         var myOffcanvas = document.getElementById('offcanvasExample');
-
-
         myOffcanvas.addEventListener('hidden.bs.offcanvas', function (event) {
             var target = event.relatedTarget;
             if (target && target.tagName === 'A') {
@@ -14,7 +11,6 @@
                 }
             }
         });
-
         var navLinks = document.querySelectorAll('#OffCanvas .nav-link');
         navLinks.forEach(function(link) {
             link.addEventListener('click', function() {
@@ -29,3 +25,16 @@
         });
     });
 
+    const whatsappDiv = document.createElement('div');
+    const whatsappText = document.createElement('div');
+    whatsappText.id = '#whatsapp-icon-text';
+    whatsappDiv.id = 'whatsapp-icon';
+    whatsappDiv.innerHTML = '<i class="fab fa-whatsapp"></i>';
+    whatsappText.innerHTML='Randevu Al';
+    whatsappDiv.addEventListener("click",function(){
+        const phonenumber = `05419577989`;
+        const WhatsappUrl = `https://wa.me/${phonenumber}?text=Merhaba%20web%20indiriminden%20yararlanabilirmiyim?`;
+        window.open(WhatsappUrl,`_blank`);
+    })
+    whatsappDiv.appendChild(whatsappText);
+    document.body.appendChild(whatsappDiv);

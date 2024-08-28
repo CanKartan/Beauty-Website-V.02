@@ -1,3 +1,4 @@
+
 @media only screen and (max-width: 1024px) {
     html{
         height: 100vh;
@@ -8,10 +9,41 @@
     #ofcanvas{
         display: block;
     }
+
+    /* Whatsapp İcon */
+    #whatsapp-icon {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1;
+        height: 60px;
+        background-color: #25d366;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        color: white;
+        padding: 0 15px;
+        font-size: 20px; /* Font boyutunu ayarlama */
+    }
+    
+    /* İkonu doğru hizalama */
+    #whatsapp-icon i {
+        font-size: 30px; /* İkon boyutunu ayarlama */
+    }
+    
+    /* Yazı balonunu stillendirme */
+    #whatsapp-icon-text {
+        margin-left: 10px;
+        font-size: 10px;
+    }
     #Home_section{
-       height: 40vh; 
+       height: 60vh; 
         width: 100%;
         margin: 0 auto;
+    }
+    #carouselExampleCaptions{
+        padding-top: 10vh;
     }
     #Welcome_seciton{
         width: 100%;
@@ -64,15 +96,16 @@
             text-overflow: ellipsis;
         }
         .Lazer_Btn{
+            color: white;
             margin: 0 auto;
             padding: 20px;
             border-radius: 5px;
             cursor: pointer;
             border: none;
-            background-color: #AAB396;
+            background-color: #508D4E;
         } 
         #Services_Section{
-            background-color: #AAB396;
+            background-color: #80AF81;
             margin-top: 70px;
             width:100%;
         }
@@ -93,7 +126,7 @@
                 height: 40vh;
             }
             #Services_Section .services_card .btn{
-                background-color: #AAB396;
+                background-color: #508D4E;
                 border: none;
             }
             #Services_Section .services_card img{
@@ -102,11 +135,8 @@
                 padding-top: 10px;
                 border-radius: 2px;
             }
-            #Coments_section {
-                margin-left: 2px;
-            }
-            
             .comments {
+                padding-left: 1px;
                 display: flex;
                 flex-direction: column; 
                 flex-wrap: wrap; 
@@ -116,7 +146,7 @@
                 display: flex;
                 flex-direction: column; 
                 margin-bottom: 10px;
-                border-bottom: 1px solid black;
+                border-bottom: 1px solid #1A5319;
                 align-items: center; 
             }
             

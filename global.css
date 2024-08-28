@@ -12,10 +12,29 @@ body {
 html {
     scroll-behavior: smooth;
 }
-.wp-color{
-    background-color: #075e54;
-    color: 	#25d366;
+/* Wp Section */
+#whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+    height: 60px;
+    background-color: #25d366;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    padding: 0 15px;
+    font-size: 20px; 
 }
+#whatsapp-icon i {
+    font-size: 30px; 
+}
+#whatsapp-icon-text {
+    margin-left: 10px;
+    font-size: 10px;
+} 
 
 /* Navbar Section */
 #Nav_section {
@@ -42,10 +61,10 @@ html {
 
 #Nav_section ul li a:hover,
 #OffCanvas li a:hover {
-    color: grey;
+    color: #1A5319;
     text-decoration: underline;
     text-underline-offset: 1rem;
-    text-decoration-color: rgb(181, 181, 181);
+    text-decoration-color:#D6EFD8;
 }
 
 /* Offcanvas Section */
@@ -62,16 +81,14 @@ html {
 }
 #OffCanvas li {
     text-align: center;
-    border-radius: 20px;
+    border-radius: 5px;
     width: 30vh;
     font-size: 1.5rem;
     margin-top: 20px;
-    box-shadow: 2px 2px 2px; 
-    box-shadow: 2px 2px 2px;
 }
 #ofcanvas .ofcanvasBTN {
     cursor: pointer;
-    background-color: #E7F0DC;
+    background-color: #D6EFD8;
 }
 /* Responsive - Phone */
 .Nav_section_phone {
@@ -81,11 +98,11 @@ html {
 /* Footer */
 
 footer {
-    background-color: #AAB396;
+    background-color: #80AF81;
     width: 100%;
     padding: 20px 5px;
     margin: 0 auto;
-    color: white;
+    color: #D6EFD8;
 }
 
 footer p {
@@ -121,13 +138,13 @@ footer p {
 }
 
 .icons a {
-    color: white;
+    color: #D6EFD8;
     padding: 0 20px;
     transition: color 0.2s ease-in;
 }
 
 .icons a:hover {
-    color: #f1c40f; /* Hover'da rengi değiştirme */
+    color: white; /* Hover'da rengi değiştirme */
 }
 
 

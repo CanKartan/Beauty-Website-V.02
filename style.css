@@ -1,3 +1,4 @@
+
 /* HOME SECTION */
 #Home_section {
     height: 120vh;
@@ -9,20 +10,20 @@
 
 .card_color_text {
     font-size: 1.5rem;
-    color: red;
+    color: #FF0000;
     text-align: center;
 }
 
 /* Button Styling */
 .All_Btn {
-    background-color: #AAB396;
+    background-color: #508D4E;
     border: none;
     color: white;
     transition: background-color 0.2s ease-in, text-decoration 0.2s ease-in;
 }
 
 .All_Btn:hover {
-    background-color: rgb(181, 181, 181);
+    background-color:#D6EFD8;
     text-decoration: underline;
 }
 
@@ -65,21 +66,21 @@
 .Lazer_Btn {
     margin-right: 60vh;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 2px;
     cursor: pointer;
     border: none;
-    background-color: #AAB396;
+    background-color: #80AF81;
     transition: background-color 0.2s ease-in, text-decoration 0.2s ease-in;
 }
 
 .Lazer_Btn:hover {
-    background-color: #F7EED3;
+    background-color: #D6EFD8;
     text-decoration: underline;
 }
 
 /* Services Section */
 #Services_Section {
-    background-color: #AAB396;
+    background-color: #80AF81;
     margin-top: 100px;
     width: 100%;
 }
@@ -104,7 +105,7 @@
 }
 
 #Services_Section .services_card .btn {
-    background-color: #AAB396;
+    background-color: #80AF81;
     border: none;
 }
 
@@ -117,16 +118,16 @@
 
 /* Comments Section */
 #Coments_section{
-    margin-left: 20vh;
+text-align: center;
 }
 .comments {
+   padding-left: 20vh;
     display: flex;
     flex-wrap: wrap-reverse;
 }
 .comments_container{
     display: flex;
     margin-bottom: 10px;
-    border-bottom: 1px solid black;
 }
 .comments_container img{
     margin-right: 10px;
@@ -134,7 +135,6 @@
     width: 10vh;
 }
 .comment-content{
-    /* background-color: black; */
     width: 70vh;
     display: flex;
 }
