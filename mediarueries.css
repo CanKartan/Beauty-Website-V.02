@@ -187,5 +187,41 @@
                 font-size: 2vh;
             }
 
+            #Contact_container{
+                margin: 0 auto;
+                width: 80%;
+            }
+
+            .contact{
+                width: 80%;
+                margin: 0 auto; 
+                padding-top: 2px;
+                display: flex;
+                flex-direction: column;
+            }
+            .contact h2{   
+                text-align: center;
+            }
+            .contact p{
+                font-weight: bold;
+                text-align: center;
+            }
+            .contact button{
+                width: 100%;
+                padding: 20px;
+                border-radius: 15px;
+                border: none;
+                color: white;
+                background-color:#25d366;
+            }
+            .contact button:hover{
+                transition: 0.3s all ease-in-out;
+                color: black;
+                background-color:#075e54;
+            }
+            .contact iframe{
+                width: 100%;
+                padding-left: 1px;
+            }
 }
 
