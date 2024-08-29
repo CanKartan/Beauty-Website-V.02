@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
+    <title>Galeri</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -11,42 +11,39 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./global.css" />
-
     <style>
-      #Contact_container {
-        margin: 0 auto;
-        width: 80%;
-        height: 70vh;
-      }
-      .contact {
-        width: 80%;
-        margin: 0 auto;
-        padding-top: 25vh;
+      #Galeri_section {
         display: flex;
+        justify-content: center;
       }
-      .contact h2 {
+      .galeri_cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .card {
+        flex: 1 1 calc(25% - 20px);
+        margin: 10px;
         text-align: center;
-      }
-      .contact p {
         font-weight: bold;
-        text-align: center;
-      }
-      .contact button {
-        width: 100%;
-        padding: 20px;
-        border-radius: 15px;
         border: none;
-        color: white;
-        background-color: #25d366;
       }
-      .contact button:hover {
-        transition: 0.3s all ease-in-out;
-        color: black;
-        background-color: #075e54;
+
+      .card img {
+        width: 100%;
+        height: auto;
       }
-      .contact iframe {
-        width: 50vh;
-        padding-left: 10vh;
+      @media only screen and (max-width: 1024px) {
+        .galeri_cards {
+          width: 90%;
+        }
+
+        .card {
+          flex: 1 1 calc(50% - 20px);
+        }
       }
     </style>
     <link rel="stylesheet" href="./mediarueries.css" />
@@ -59,7 +56,7 @@
       <ul class="Nav_section_pc">
         <li><a href="./index.html">Ana Sayfa</a></li>
         <li><a href="./Services.html">Hizmetlerimiz</a></li>
-        <li><a href="...">Galeri</a></li>
+        <li><a href="./galeri.html">Galeri</a></li>
         <li><a href="./contact.html">İletişim</a></li>
       </ul>
       <div id="ofcanvas">
@@ -102,27 +99,49 @@
         </div>
       </div>
     </nav>
-    <section id="Contact_container">
-      <div class="contact">
-        <div class="contact_title">
-          <h2>Anında İletişim Anında Randevu</h2>
-          <a href="https://wa.me/905419577989?text=Merhaba%20bilgi%20almak%20istiyorum" target="_blank">
-            <button>WhatsApp Bilgi</button>
-          </a>
-          <p>Mutlu Müşteriler...</p>
-          <p><i class="fa-solid fa-phone"></i> 0501 098 23 26</p>
-          <p>
-            <i class="fa-solid fa-location-dot"></i> Hoşnudiye, Behiç Erkin
-            Caddesi No:2 D:8 kat 2, 26130 Tepebaşı/Eskişehir
-          </p>
+
+    <section id="Galeri_section">
+      <div class="row galeri_cards">
+        <div class="card col">
+          <p>Kaş Bakımı</p>
+          <img
+            src="./assets/carousel_images_2.JPG"
+            class="card-img-top"
+            alt="..."
+          />
         </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.3209536581694!2d30.504439903045807!3d39.78055568005063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cc1541cc67c6eb%3A0x3af667bb31dcd944!2sLucinda%20Beauty!5e0!3m2!1str!2str!4v1724945203671!5m2!1str!2str"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+        <div class="card col">
+          <p>Cİlt Bakımı</p>
+          <img
+            src="./assets/carousel_images_1.JPG"
+            class="card-img-top"
+            alt="..."
+          />
+        </div>
+        <div class="card col">
+          <p>Tırnak Bakımı</p>
+          <img
+            src="./assets/carousel_images_3.JPG"
+            class="card-img-top"
+            alt="..."
+          />
+        </div>
+        <div class="card col">
+          <p>G5 Masajı</p>
+          <img
+            src="./assets/carousel_imgaes_4.JPG"
+            class="card-img-top"
+            alt="..."
+          />
+        </div>
+        <div class="card col">
+          <p>Lazer Epilasyon</p>
+          <img
+            src="./assets/carousel_images_2.JPG"
+            class="card-img-top"
+            alt="..."
+          />
+        </div>
       </div>
     </section>
     <footer>
