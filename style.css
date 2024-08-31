@@ -110,7 +110,8 @@
 }
 
 #Services_Section .services_card img {
-    width: 20vh;
+    width: 30vh;
+    height: 30vh;
     margin: 0 auto;
     padding-top: 10px;
     border-radius: 2px;

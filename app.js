@@ -32,7 +32,7 @@
     whatsappDiv.innerHTML = '<i class="fab fa-whatsapp"></i>';
     whatsappText.innerHTML='Randevu Al';
     whatsappDiv.addEventListener("click",function(){
-        const phonenumber = `905419577989`;
+        const phonenumber = `905010982326`;
         const WhatsappUrl = `https://wa.me/${phonenumber}?text=Merhaba%20web%20indiriminden%20yararlanabilirmiyim?`;
         window.open(WhatsappUrl,`_blank`);
     })

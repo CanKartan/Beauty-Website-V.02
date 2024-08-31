@@ -130,7 +130,8 @@
                 border: none;
             }
             #Services_Section .services_card img{
-                width: 15vh;
+                width: 20vh;
+                height: 20vh;
                 margin: 0 auto;
                 padding-top: 10px;
                 border-radius: 2px;
@@ -223,5 +224,17 @@
                 width: 100%;
                 padding-left: 1px;
             }
+
+            .aboutcontainer{
+                width: 80%;
+                margin: 0 auto;
+              }
+              .col{
+                flex-direction: column;
+               margin-left: 5vh;
+              }
+              .col img{
+                width: 20vh;
+              }
 }
 
